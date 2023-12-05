@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3c3c3c"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textcontador"
+        android:layout_width="392dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#b5b5b5"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="179dp"
+            android:layout_height="112dp"
+            android:backgroundTint="#008F39"
+            android:onClick="IrMenuDeMejoras"
+            android:text="PAUSA"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.754"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.366" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="104dp"
+            android:layout_height="143dp"
+            android:backgroundTint="#0000FF"
+            android:onClick="segundero"
+            android:text="PLAY"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.413" />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="184dp"
+            android:layout_height="82dp"
+            android:backgroundTint="#FF8000"
+            android:onClick="irRecycledView"
+            android:text="RECORD"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.542" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="308dp"
+        android:layout_height="278dp"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
